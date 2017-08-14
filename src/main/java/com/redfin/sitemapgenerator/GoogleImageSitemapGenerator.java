@@ -93,7 +93,7 @@ public class GoogleImageSitemapGenerator extends SitemapGenerator<GoogleImageSit
 			renderTag(tagSb, "image", "license", url.getLicenseUrl());
 			renderTag(tagSb, "image", "caption", url.getCaption());
 			renderTag(tagSb, "image", "geo_location", url.getGeoLocation());
-			renderTag(tagSb, "image", "title", url.title());
+			renderTag(tagSb, "image", "title", url.getTitle());
 			tagSb.append("    </image:image>\n");
 			super.render(url, sb, dateFormat, tagSb.toString());
 		}
