@@ -85,16 +85,16 @@ public class GoogleImageSitemapGenerator extends SitemapGenerator<GoogleImageSit
 			return "xmlns:codesearch=\"http://www.google.com/schemas/sitemap-image/1.1\"";
 		}
 
-		public void render(GoogleCodeSitemapUrl url, StringBuilder sb,
+		public void render(GoogleImageSitemapUrl url, StringBuilder sb,
 				W3CDateFormat dateFormat) {
 			StringBuilder tagSb = new StringBuilder();
-			tagSb.append("    <codesearch:codesearch>\n");
-			renderTag(tagSb, "codesearch", "filetype", url.getFileType());
-			renderTag(tagSb, "codesearch", "license", url.getLicense());
-			renderTag(tagSb, "codesearch", "filename", url.getFileName());
-			renderTag(tagSb, "codesearch", "packageurl", url.getPackageUrl());
-			renderTag(tagSb, "codesearch", "packagemap", url.getPackageMap());
-			tagSb.append("    </codesearch:codesearch>\n");
+			tagSb.append("    <image:image>\n");
+			renderTag(tagSb, "image", "loc", url.getImageUrl());
+			renderTag(tagSb, "image", "license", url.getLicenseUrl());
+			renderTag(tagSb, "image", "caption", url.getCaption());
+			renderTag(tagSb, "image", "geo_location", url.getGeoLocation());
+			renderTag(tagSb, "image", "title", url.title());
+			tagSb.append("    </image:image>\n");
 			super.render(url, sb, dateFormat, tagSb.toString());
 		}
 		
