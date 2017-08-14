@@ -21,10 +21,10 @@ public class GoogleImageSitemapUrl extends WebSitemapUrl {
 	/** Options to configure Google Image URLs */
 	public static class Options extends AbstractSitemapUrlOptions<GoogleImageSitemapUrl, Options> {
 		private URL imageUrl;
-    private URL licenseUrl;
-    private String caption;
-    private String geoLocation;
-    private String title;
+                private URL licenseUrl;
+                private String caption;
+                private String geoLocation;
+                private String title;
 	
 		/** Specifies a landing page URL, together with the URL of the underlying video (e.g. FLV)
 		 * 
