@@ -21,10 +21,10 @@ public class GoogleImageSitemapUrl extends WebSitemapUrl {
 	/** Options to configure Google Image URLs */
 	public static class Options extends AbstractSitemapUrlOptions<GoogleImageSitemapUrl, Options> {
 		private URL imageUrl;
-                private URL licenseUrl;
-                private String caption;
-                private String geoLocation;
-                private String title;
+		private URL licenseUrl;
+		private String caption;
+		private String geoLocation;
+		private String title;
 	
 		/** Specifies a landing page URL, together with the URL of the underlying video (e.g. FLV)
 		 * 
@@ -90,14 +90,14 @@ public class GoogleImageSitemapUrl extends WebSitemapUrl {
 	/** Configures the url with options */
 	public GoogleImageSitemapUrl(Options options) {
 		super(options);
-		locationUrl = options.locationUrl;
-		if (locationUrl == null) {
+		imageUrl = options.imageUrl;
+		if (imageUrl == null) {
 			throw new RuntimeException("You must specify a location url for the image");
 		}
-    licenseUrl = options.licenseUrl;
-    caption = options.caption;
-    geoLocation = options.geoLocation;
-    title = options.title;
+		licenseUrl = options.licenseUrl;
+		caption = options.caption;
+		geoLocation = options.geoLocation;
+		title = options.title;
 	}
 	
 	private static String convertBooleanToYesOrNo(Boolean value) {
@@ -107,8 +107,8 @@ public class GoogleImageSitemapUrl extends WebSitemapUrl {
 	
 	
 	/** Retrieves the {@link Options#locationUrl}*/
-	public URL getLocationUrl() {
-		return locationUrl;
+	public URL getImageUrl() {
+		return imageUrl;
 	}
   
   /** Retrieves the {@link Options#licenseUrl}*/
