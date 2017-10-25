@@ -1,6 +1,11 @@
 sitemapgen4j
 ============
 
+
+[![pipeline status](https://git.redmic.net/third-party/sitemapgen4j/badges/master/pipeline.svg)](https://git.redmic.net/third-party/sitemapgen4j/commits/master)
+
+[![coverage report](https://git.redmic.net/third-party/sitemapgen4j/badges/master/coverage.svg)](https://git.redmic.net/third-party/sitemapgen4j/commits/master)
+
 SitemapGen4j is a library to generate XML sitemaps in Java.
 
 <h2>What's an XML sitemap?</h2>
