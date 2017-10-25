@@ -18,6 +18,7 @@ test:
   stage: test
   script:
     - mvn $MAVEN_CLI_OPTS test
+    - "cat target/site/jacoco/index.html"
 
 deploy:
   stage: deploy
