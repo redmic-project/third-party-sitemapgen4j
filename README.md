@@ -1,3 +1,5 @@
+[![pipeline status](https://git.redmic.net/third-party/sitemapgen4j/badges/master/pipeline.svg)](https://git.redmic.net/third-party/sitemapgen4j/commits/master) [![coverage report](https://git.redmic.net/third-party/sitemapgen4j/badges/master/coverage.svg)](https://git.redmic.net/third-party/sitemapgen4j/commits/master)
+
 sitemapgen4j
 ============
 
