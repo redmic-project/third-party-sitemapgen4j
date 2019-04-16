@@ -12,7 +12,7 @@
 	<groupId>es.redmic.lib</groupId>
 	<artifactId>sitemapgen4j</artifactId>
 	<packaging>jar</packaging>
-	<version>0.6.0</version>
+	<version>0.6.0-feature-updateCI</version>
 	<name>SitemapGen4J</name>
 	<description>Sitemap generator</description>
 	
@@ -25,9 +25,6 @@
 
 		<!-- Version plugins -->
 		<jacoco.version>0.8.1</jacoco.version>
-
-		<!-- Environment variables -->
-		<env.MAVEN_REPO_URL>https://artifactory.redmic.net/artifactory</env.MAVEN_REPO_URL>
 	</properties>
 	
 	<dependencies>
@@ -37,19 +34,6 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	<distributionManagement>
-		<repository>
-			<id>central</id>
-			<name>redmic-releases</name>
-			<url>${env.MAVEN_REPO_URL}/libs-release-local</url>
-		</repository>
-		<snapshotRepository>
-			<id>snapshots</id>
-			<name>redmic-snapshots</name>
-			<url>${env.MAVEN_REPO_URL}/libs-snapshot-local</url>
-			<uniqueVersion>false</uniqueVersion>
-		</snapshotRepository>
-	</distributionManagement>
 	<build>
 		<plugins>
 			<plugin>
